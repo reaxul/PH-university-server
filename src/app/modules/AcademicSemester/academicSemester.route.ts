@@ -11,7 +11,7 @@ router.post(
   '/create-academic-semester',
   auth(USER_ROLE.superAdmin, USER_ROLE.admin),
   validateRequest(
-    AcademicSemesterValidations.createAcdemicSemesterValidationSchema,
+    AcademicSemesterValidations.createAcademicSemesterValidationSchema,
   ),
   AcademicSemesterControllers.createAcademicSemester,
 );
